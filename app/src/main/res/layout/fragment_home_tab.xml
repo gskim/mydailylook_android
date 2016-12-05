@@ -1,0 +1,8 @@
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_weight="1"
+    android:padding="6dp"
+    android:scaleType="center"
+    android:tint="@color/selector_tab_icon"
+    android:background="@color/main_color"/>

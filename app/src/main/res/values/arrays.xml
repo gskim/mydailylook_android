@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="public_type">
+        <item>공개</item>
+        <item>비공개</item>
+        <item>팔로워공개</item>
+    </string-array>
+    <string-array name="toolbar_menu">
+        <item>신고하기</item>
+        <item>설정</item>
+    </string-array>
+</resources>

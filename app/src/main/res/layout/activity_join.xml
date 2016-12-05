@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_activity_join_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="back"
+            android:textColor="@color/main_color"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_activity_join_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Mydailylook"
+            android:textColor="@color/main_color"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:transitionName="@string/title_transition" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="아이디를 만들고 주변에 데일리룩을 소개해 주세요."
+        android:textSize="18sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_activity_join_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:text=""
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="20sp"
+        app:met_baseColor="@color/main_color"
+        app:met_clearButton="true"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextSize="18sp"
+        app:met_iconLeft="@android:drawable/ic_dialog_email"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_activity_join_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:maxLength="20"
+        android:text=""
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="20sp"
+        app:met_baseColor="@color/main_color"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextSize="18sp"
+        app:met_iconLeft="@android:drawable/ic_dialog_alert"
+        app:met_iconRight="@android:drawable/ic_delete"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="?colorAccent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_activity_join_pw_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:maxLength="20"
+        android:text=""
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="20sp"
+        app:met_baseColor="@color/main_color"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextSize="18sp"
+        app:met_iconLeft="@android:drawable/ic_dialog_alert"
+        app:met_iconRight="@android:drawable/ic_delete"
+        app:met_maxCharacters="20"
+        app:met_primaryColor="?colorAccent" />
+
+    <Button
+        android:id="@+id/btn_activity_join"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Google+"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="페이스북"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_activity_join_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="회원가입시 이용약관에 동의하게 됩니다."
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,347 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_color">
+
+        <ImageView
+            android:id="@+id/iv_activity_profile_input_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_activity_profile_input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_profile_input"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_activity_profile_input_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_arrow_forward" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_activity_profile_input_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="닉네임"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="18sp"
+                app:met_baseColor="@color/main_color"
+                app:met_clearButton="true"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="20"
+                app:met_primaryColor="?colorAccent"
+                app:met_singleLineEllipsis="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="3">
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/spinner_activity_profile_input_year"
+                    style="@style/Material.Widget.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                    app:spn_label="년"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/main_color"
+                    app:spn_labelTextSize="16sp" />
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/spinner_activity_profile_input_month"
+                    style="@style/Material.Widget.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                    app:spn_label="월"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/main_color"
+                    app:spn_labelTextSize="16sp" />
+
+                <com.rey.material.widget.Spinner
+                    android:id="@+id/spinner_activity_profile_input_day"
+                    style="@style/Material.Widget.Spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:spn_label="일"
+                    app:spn_labelEnable="true"
+                    app:spn_labelTextColor="@color/main_color"
+                    app:spn_labelTextSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/rb_activity_profile_input_male"
+                    style="@style/Material.Drawable.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:text="남"
+                    android:textSize="18sp" />
+
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/rb_activity_profile_input_female"
+                    style="@style/Material.Drawable.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="여"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_min_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="140"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="cm"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_max_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="190"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="cm"
+                        android:textSize="18sp" />
+
+                    <com.rey.material.widget.Spinner
+                        android:id="@+id/spinner_activity_profile_input_height"
+                        style="@style/Material.Widget.Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:spn_label="공개여부"
+                        app:spn_labelEnable="true"
+                        app:spn_labelTextColor="@color/main_color"
+                        app:spn_labelTextSize="16sp" />
+
+                </LinearLayout>
+
+                <com.appyvet.rangebar.RangeBar
+                    android:id="@+id/rangebar_activity_profile_input_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    custom:tickEnd="190"
+                    custom:tickInterval="5"
+                    custom:tickStart="140" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_min_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="40"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="kg"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_max_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="100"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="kg"
+                        android:textSize="18sp" />
+
+                    <com.rey.material.widget.Spinner
+                        android:id="@+id/spinner_activity_profile_input_weight"
+                        style="@style/Material.Widget.Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:spn_label="공개여부"
+                        app:spn_labelEnable="true"
+                        app:spn_labelTextColor="@color/main_color"
+                        app:spn_labelTextSize="16sp" />
+
+                </LinearLayout>
+
+                <com.appyvet.rangebar.RangeBar
+                    android:id="@+id/rangebar_activity_profile_input_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    custom:tickEnd="100"
+                    custom:tickInterval="5"
+                    custom:tickStart="40" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_min_foot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="220"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="cm"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_profile_input_max_foot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/shape_line"
+                        android:padding="5dp"
+                        android:text="290"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="cm"
+                        android:textSize="18sp" />
+
+                    <com.rey.material.widget.Spinner
+                        android:id="@+id/spinner_activity_profile_input_foot"
+                        style="@style/Material.Widget.Spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:spn_label="공개여부"
+                        app:spn_labelEnable="true"
+                        app:spn_labelTextColor="@color/main_color"
+                        app:spn_labelTextSize="16sp" />
+
+                </LinearLayout>
+
+                <com.appyvet.rangebar.RangeBar
+                    android:id="@+id/rangebar_activity_profile_input_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    custom:tickEnd="290"
+                    custom:tickInterval="5"
+                    custom:tickStart="220" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- 게시글 등록 -->
+    <item name="tag_index" type="id" />
+    <item name="tag_img_uri" type="id" />
+
+</resources>

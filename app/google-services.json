@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "840045040973",
+    "firebase_url": "https://mydailylook-1469859602855.firebaseio.com",
+    "project_id": "mydailylook-1469859602855",
+    "storage_bucket": "mydailylook-1469859602855.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840045040973:android:7387c369957e388b",
+        "android_client_info": {
+          "package_name": "net.args.mydailylook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840045040973-bpk7m0mncso9sa2oe0p3fk3epsg2e5os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg5qdNLJM0r1ZYUYAzE90Yx_-4raZCYfo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
